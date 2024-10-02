@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="in.master.bean.Contact" id="contId">
+    	<constructor-arg value="Master"></constructor-arg>
+    	<constructor-arg value="9876594865"></constructor-arg>
+    </bean>
+    
+    <bean class="in.master.bean.Student" id="stdId">
+    	<constructor-arg value="Master"></constructor-arg>
+    	<constructor-arg value="10"></constructor-arg>
+    	<constructor-arg ref="contId"></constructor-arg>
+    </bean>
+
+</beans>
