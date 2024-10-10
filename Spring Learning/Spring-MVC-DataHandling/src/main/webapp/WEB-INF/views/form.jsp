@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Registration</title>
+	<style>
+		.main {
+			width: 20%;
+			border: 2px solid black;
+			margin: auto;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.main:hover {
+			box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+		}
+
+		h1:hover {
+			font-weight: 700;
+		}
+
+		form {
+			padding: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<h1>Registration Form</h1>
+		<form action="register" method="post">
+			<table>
+				<tr>
+					<td><label for="name">Name :</label></td>
+					<td><input type="text" id="name" name="name" placeholder="Enter Name"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email :</label></td>
+					<td><input type="email" id="email" name="email" placeholder="Enter Email"></td>
+				</tr>
+				<tr>
+					<td><label for="pass">Password :</label></td>
+					<td><input type="password" id="pass" name="pass" placeholder="Enter Password"></td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td><input type="checkbox" name="box" required>Terms and Conditions.*</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit"></td>
+					<td><input type="reset" value="Reset"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
